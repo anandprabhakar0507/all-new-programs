@@ -1,2 +1,2 @@
-# all-new-python-programs
-This repository consist all new python programs 
+# all-new-programs
+This repository consist all new programs 
