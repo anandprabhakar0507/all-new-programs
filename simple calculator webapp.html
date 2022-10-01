@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-    <form id="myForm">
-        <button id="btn" type="button" value="Anand Prabhakar">My Button</button>
-    </form>
+<head>
     <script>
         
-        var str2 = document.getElementById("btn").value;
-        document.write("<br>My Name is: " + str2);
+        function sumthem(){
+	            var x,y,sum;
+	            x =  Number(document.getElementById('a').value);
+	            y =  Number(document.getElementById('b').value);
+	            sum = x+y;
+	            document.getElementById("display").innerHTML ="The Sum of Numbers "+x+" 	and "+y+" is "+sum;
+            
+	        }
     </script>
+     
+	        
+</head>
+<body>
+    
+    
+    <h1>Sum of Two Numbers</h1>
+	    <br>
+    
+	        <div>Enter First Number : </span><input name="a" id="a" ><br><br>
+	        <span>Enter Second Number : </span><input name="b" id="b"><br><br>
+	        <span id="display"></span>
+	        <br><br>
+ 	       <button onclick="sumthem()">Add both numbers</button><br><br>
+	    </div>
+    
+    <br><br>
+    
+    
 </body>
 
 </html>
