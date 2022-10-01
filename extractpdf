@@ -7,7 +7,7 @@ def extract_information(pdf_path):
         number_of_pages = pdf.getNumPages()
 
     txt = f"""
-    Information about {pdf_path}: 
+    Information about {pdf_path}:
 
     Author: {information.author}
     Creator: {information.creator}
