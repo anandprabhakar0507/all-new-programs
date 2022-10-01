@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Basic calculator using js by Anand Prabhakar</title>
     <style>
         *{text-align: center;
         margin: 0px;
-
+        
+        }
+        #advanced{
+            display: none;
         }
         html{background: yellow;}
         .calc{background: red;
@@ -15,42 +19,99 @@
             background-color: blue;
             color: yellow;
         }
-
+        button{
+            background: green;
+            color: yellow;
+            width: 20%;
+            height: 30px;
+            margin-right: 20px;
+        }
+        button:hover{
+            background: yellow;
+            color: red;
+            scale :2;
+        }
+        
     </style>
     <script>
-
+        
         function sumthem(){
 	            var x,y,sum;
 	            x =  Number(document.getElementById('a').value);
 	            y =  Number(document.getElementById('b').value);
 	            sum = x+y;
 	            document.getElementById("display").innerHTML ="The Sum of Numbers "+x+" 	and "+y+" is "+sum;
+	        }
+	        function subthem(){
+	            var x,y,sum;
+	            x =  Number(document.getElementById('a').value);
+	            y =  Number(document.getElementById('b').value);
+	            sub = x-y;
+	            document.getElementById("display").innerHTML ="The Difference of Numbers "+x+" 	and "+y+" is "+sub;
+	        }
+	        function multthem(){
+	            var x,y,sum;
+	            x =  Number(document.getElementById('a').value);
+	            y =  Number(document.getElementById('b').value);
+	            mult = x*y;
+	            document.getElementById("display").innerHTML ="The product of Numbers "+x+" 	and "+y+" is "+mult;
+	        }
+	        function divthem(){
+	            var x,y,sum;
+	            x =  Number(document.getElementById('a').value);
+	            y =  Number(document.getElementById('b').value);
+	            q = x/y;
+	            r= x%y;
+	            document.getElementById("display").innerHTML ="The Quotient of Numbers "+x+" ÷ "+y+" is "+q+ " and remainder is "+r;
+	            
+	        }
+	        function credit(){
+	            
+	            document.getElementById("advanced").style.display = 'block';
+	            document.getElementById("display2").innerHTML = " \n This web app is presented to you by Anand Prabhakar\nFor more info go to https://linkedin.com/in/anand-prabhakar-0507";
+	           
 
 	        }
+	        function powern(){
+	            var x,y;
+	            x =  Number(document.getElementById('a').value);
+	            y =  Number(document.getElementById('b').value);
+	            document.getElementById("display").innerHTML = +x+ "^" +y+ "=" +(x**y);
+	        }
     </script>
-
-
+     
+	        
 </head>
 <body>
-
-
-    <h1>Calculator</h1>
+    
+    
+    <h1>Calculator by Anand Prabhakar</h1>
 	    <br>
-
+    
 	        <div class="calc">
 	            <span></span>Enter First Number : </span><input name="a" id="a" ><br>
 	        <span>Enter Second Number : </span><input name="b" id="b"><br><br>
 	        <span id="display"></span>
 	        <br><br>
- 	       <button onclick="sumthem()">Add both numbers</button>
- 	       <button onclick="subthem()">Add both numbers</button>
- 	       <button onclick="multhemthem()">Add both numbers</button>
- 	       <button onclick="divthem()">Add both numbers</button><br><br>
+ 	       <button onclick="sumthem()">+</button>
+ 	       <button onclick="subthem()">-</button>
+ 	       <button onclick="multthem()">X</button>
+ 	       <button onclick="divthem()">÷</button><br><br>
+ 	       
+ 	       <button onclick="credit()">Advanced</button>
+ 	       <div id="advanced" >
+ 	            <div class="calc">
+	            <br>
+ 	            <button onclick="powern()">Find power</button>
+ 	            
+ 	            <br><br>
+ 	            <span id="display2"></span>
+ 	       </div>
 	    </div>
-
+    
     <br><br>
-
-
+    
+    
 </body>
 
 </html>
