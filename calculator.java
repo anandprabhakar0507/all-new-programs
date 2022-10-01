@@ -16,9 +16,9 @@ class subtract{
         Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER FIRST NUMBER a: ");
         double a = x.nextDouble();
-        Scanner y = new Scanner(System.in);
+        Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER SECOND NUMBER b: ");
-        double b = y.nextDouble();
+        double b = x.nextDouble();
         System.out.println( + a + " - " + b + " is " + (a - b));
     }
    
@@ -28,9 +28,9 @@ class multiplication {
         Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER FIRST NUMBER a: ");
         double a = x.nextDouble();
-        Scanner y = new Scanner(System.in);
+        Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER SECOND NUMBER b: ");
-        double b = y.nextDouble();
+        double b = x.nextDouble();
         System.out.println( + a + " X " + b + " is  " + (a * b));
     }
    
@@ -40,9 +40,9 @@ class division{
         Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER FIRST NUMBER a: ");
         double a = x.nextDouble();
-        Scanner y = new Scanner(System.in);
+        Scanner x = new Scanner(System.in);
         System.out.println("PLEASE ENTER SECOND NUMBER b: ");
-        double b = y.nextDouble();
+        double b = x.nextDouble();
         System.out.println("quotient of " + a + " / " + b + " is  " + (a / b)+ " and remainder is " +(a % b));
     }
    
