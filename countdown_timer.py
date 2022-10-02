@@ -1,4 +1,4 @@
-//Countdown_timer
+#Countdown_timer
 
 import time
 
@@ -10,6 +10,7 @@ def countdown(time_sec):
         time.sleep(1)
         time_sec -= 1
 
-    print("stop")
+    print("Time over")
 
-countdown(5)
+i = int(input("Enter no. of seconds : "))
+countdown(i)
