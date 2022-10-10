@@ -1,0 +1,8 @@
+{
+    "code-runner.runInTerminal": true,
+    "files.associations": {
+        "iostream": "cpp",
+        "stdio.h": "c"
+    },
+    "code-runner.clearPreviousOutput": true
+}
