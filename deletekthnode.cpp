@@ -28,8 +28,8 @@ void display(struct node* p)
 {
           if(p != NULL)
 	  { 
-	        cout << p->data << "-->";
-	        display(p->next);
+	         cout << p->data << "-->";
+	         display(p->next);
 	  }
 	
 	
