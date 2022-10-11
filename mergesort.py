@@ -14,9 +14,9 @@ def merge(arr, l, m, r):
         R[j] = arr[m + 1 + j]
 
     # Merge the temp arrays back into arr[l..r]
-    i = 0     # Initial index of first subarray
-    j = 0     # Initial index of second subarray
-    k = l     # Initial index of merged subarray
+    i = 0  # Initial index of first subarray
+    j = 0  # Initial index of second subarray
+    k = l  # Initial index of merged subarray
 
     while i < n1 and j < n2:
         if L[i] <= R[j]:
@@ -41,6 +41,7 @@ def merge(arr, l, m, r):
         j += 1
         k += 1
 
+
 # l is for left index and r is right index of the
 # sub-array of arr to be sorted
 
@@ -50,11 +51,11 @@ def mergeSort(arr, l, r):
 
         # Same as (l+r)//2, but avoids overflow for
         # large l and h
-        m = l+(r-l)//2
+        m = l + (r - l) // 2
 
         # Sort first and second halves
         mergeSort(arr, l, m)
-        mergeSort(arr, m+1, r)
+        mergeSort(arr, m + 1, r)
         merge(arr, l, m, r)
 
 
@@ -65,7 +66,7 @@ print("Given array is")
 for i in range(n):
     print("%d" % arr[i], end=" ")
 
-mergeSort(arr, 0, n-1)
+mergeSort(arr, 0, n - 1)
 print("\n\nSorted array is")
 for i in range(n):
     print("%d" % arr[i], end=" ")
