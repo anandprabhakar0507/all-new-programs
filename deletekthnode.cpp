@@ -32,7 +32,10 @@ void display(struct node* p)
 		display(p->next);
 	
 	          
-          }
+          
+	  
+	  
+	  }
 	
 	
 	
