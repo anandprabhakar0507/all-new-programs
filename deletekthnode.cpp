@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
-struct node{
+struct node {
 
-	public:
-		int data;
-		struct node *next;
+	public:		
+	int data;
+	struct node* next;
+	
+
 } *first = NULL, *last = NULL;
 void create(int a[], int n)
 {
@@ -21,19 +23,22 @@ void create(int a[], int n)
 		last = t;
 	}
 
-} void display(struct node* p)
+} 
+void display(struct node* p)
 {
 	if(p != NULL)
 	{
 		cout << p->data << "-->";
 		display(p->next);
 	}
-} node *delete_end(struct node *p, int pos)
-{
+} 
+node *delete_end(struct node *p, int pos)
+
 	int i = 0;
 	node *dummy = new node();
 	dummy->next = p;
-	struct node *f; struct node *s;
+	struct node *f; 
+	struct node *s;
 	f = s = dummy;
 	while(i != pos)
 	{
@@ -53,10 +58,10 @@ int main()
 	int a[6]={3,2,5,4,1,7};
 	create(a, 6);
 	display(first);
-  int n;
-  cout << "Enter the nth node you want to delete ";
-  cin >> n;
+        int n;
+        cout << "Enter the nth node you want to delete ";
+        cin >> n;
 	cout << endl;
 	struct node *k= delete_end(first, n);
 	display(k);
- }
+}
