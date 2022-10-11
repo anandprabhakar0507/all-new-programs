@@ -12,11 +12,11 @@ sum = 0
 
 temp = num
 
-while (temp > 0):
+while temp > 0:
 
     digit = temp % 10
 
-    sum += digit ** 3
+    sum += digit**3
 
     temp //= 10
 
@@ -48,7 +48,7 @@ sum = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum += digit ** order
+    sum += digit**order
     temp //= 10
 
 # display the result
