@@ -44,7 +44,8 @@ void display(struct node* p)
 	  
 	  
 	
-	
+
+
 }
 node *delete_end(struct node *p, int pos)
 {
