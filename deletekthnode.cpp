@@ -6,6 +6,7 @@ struct node {
 	int data;
 	struct node* next;
 	
+
 } *first = NULL, *last = NULL;
 void create(int a[], int n)
 {
@@ -27,8 +28,8 @@ void display(struct node* p)
 {
           if(p != NULL)
 	  { 
-	       cout << p->data << "-->";
-	       display(p->next);
+	        cout << p->data << "-->";
+	        display(p->next);
 	  }
 	
 	
