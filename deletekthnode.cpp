@@ -6,7 +6,6 @@ struct node {
 	int data;
 	struct node* next;
 	
-
 } *first = NULL, *last = NULL;
 void create(int a[], int n)
 {
@@ -26,15 +25,19 @@ void create(int a[], int n)
 } 
 void display(struct node* p)
 {
-	if(p != NULL)
-	{
-		cout << p->data << "-->";
-		display(p->next);
-	}
+          if(p != NULL)
+	  { 
+	       cout << p->data << "-->";
+	       display(p->next);
+	  }
+	
+	
+	
+		
 } 
 node *delete_end(struct node *p, int pos)
-
-	int i = 0;
+{
+        int i = 0;
 	node *dummy = new node();
 	dummy->next = p;
 	struct node *f; 
@@ -44,7 +47,8 @@ node *delete_end(struct node *p, int pos)
 	{
 		f = f->next;
 		i++;
-	}while(f->next != NULL)
+	}
+	while(f->next != NULL)
 	{
 		f = f->next;
 		s = s->next;
@@ -55,7 +59,7 @@ node *delete_end(struct node *p, int pos)
 }
 int main()
 {
-	int a[6]={3,2,5,4,1,7};
+	int a[6]={3,2,5,4,1,7};   
 	create(a, 6);
 	display(first);
         int n;
