@@ -29,7 +29,6 @@ else:
 
     print(num, "is not an Armstrong number")
 
-
 # Check Armstrong number of n digits
 # 2nd method
 
