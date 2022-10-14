@@ -1,11 +1,14 @@
-#include<stdio.h>
-int main() {
-	int a , b , s = 0;
-	printf("enter 1st number/n");
-	scanf("%d",&a);
-	printf("enter 2nd number/n");
-	scanf("%d",&b);
-	s = s+ a + b;
-	printf("%d",s);
+// Write a program to find sum of two numbers.
+
+#include <stdio.h>
+int main()
+{
+	int a, b, s;
+	printf("Enter 1st number: ");
+	scanf("%d", &a);
+	printf("Enter 2nd number: ");
+	scanf("%d", &b);
+	s = a + b;
+	printf("The sum of two numbers are %d: ", s);
 	return 0;
 }
